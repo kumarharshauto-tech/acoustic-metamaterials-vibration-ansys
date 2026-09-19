@@ -66,16 +66,23 @@ Modal analysis was performed to identify:
 
 - Natural frequencies
 - Structural mode shapes
-- Resonant behaviour
+- Resonant behaviour of the beam and plate models
+
+The beam model was assessed over a frequency range up to approximately 1000 Hz, while the plate model focused on low-frequency bending modes up to approximately 500 Hz.
 
 ### Harmonic Response
 
-A variable-frequency harmonic excitation was used to investigate:
+Harmonic-response analysis was used to investigate the structural response under variable-frequency excitation.
+
+The study considered:
 
 - Resonance peaks
 - Frequency-response behaviour
 - Structural displacement
-- Potential vibration attenuation regions
+- Anti-resonance regions
+- Potential vibration attenuation using AMM and DVA concepts
+
+A 1 N off-centre harmonic point load was used in the simulation methodology to excite the structures across a broad frequency range.
 
 ### Structural Response
 
@@ -86,15 +93,97 @@ Additional post-processing included:
 - Maximum principal strain
 - Directional deformation
 
+These results were used to identify regions of high displacement, stress and strain under dynamic loading.
+
+## Simulation Results
+
+### Modal Analysis Results
+
+Modal analysis was used to determine the natural frequencies and corresponding mode shapes of the aluminium beam and plate models.
+
+The results were used to identify resonant behaviour and provide a basis for evaluating vibration-control strategies using acoustic metamaterials and dynamic vibration absorbers.
+
+![Modal Frequencies](images/modal-frequencies.png)
+
+![Mode Shapes](images/mode-shapes.png)
+
+### Total Deformation
+
+Total deformation was evaluated to identify the locations experiencing the greatest structural displacement under the simulated loading conditions.
+
+#### Beam
+
+The cantilever beam showed its highest deformation toward the free end, consistent with its boundary conditions and bending behaviour.
+
+![Beam Total Deformation](images/beam-total-deformation.png)
+
+#### Plate
+
+The simply supported plate showed its largest deformation around the central region of the structure.
+
+![Plate Total Deformation](images/plate-total-deformation.png)
+
+### Equivalent von Mises Stress
+
+Equivalent von Mises stress was evaluated to identify regions of elevated stress and assess structural response under the applied dynamic loading.
+
+#### Beam
+
+The beam showed its highest stress concentration near the fixed end, where bending stresses are expected to be greatest.
+
+![Beam Von Mises Stress](images/beam-von-mises-stress.png)
+
+#### Plate
+
+The plate stress distribution was evaluated to identify areas of maximum structural loading under the simulated excitation.
+
+![Plate Von Mises Stress](images/plate-von-mises-stress.png)
+
+## Additional Structural Results
+
+Further ANSYS post-processing included maximum principal strain and directional deformation for both the beam and plate models.
+
+These outputs were retained in the repository as additional evidence of the finite element post-processing and structural-response assessment.
+
+### Maximum Principal Strain
+
+#### Beam
+
+![Beam Principal Strain](images/beam-principal-strain.png)
+
+#### Plate
+
+![Plate Principal Strain](images/plate-principal-strain.png)
+
+### Directional Deformation
+
+#### Beam
+
+![Beam Directional Deformation](images/beam-directional-deformation.png)
+
+#### Plate
+
+![Plate Directional Deformation](images/plate-directional-deformation.png)
+
 ## Model Verification
 
 Model reliability was assessed using:
 
-- Mesh refinement
-- Natural-frequency convergence
+- Mesh-refinement studies
+- Natural-frequency convergence checks
 - Boundary-condition verification
-- Comparison with analytical vibration theory
+- Analytical comparison using classical beam and plate vibration theory
 - Comparison with relevant published studies
+
+The dissertation reports that further mesh refinement produced less than approximately 1% variation in the monitored natural frequencies.
+
+The first natural frequency of the simply supported plate was also reported to agree with the corresponding analytical prediction within approximately 3%.
+
+## Study Limitations
+
+The project was simulation-based and used idealised material properties, geometry and boundary conditions.
+
+Experimental validation was outside the scope of the study. Further work would therefore benefit from physical modal testing, correlation of experimental and numerical frequency responses, and additional optimisation of AMM and DVA parameters.
 
 ## Automotive Relevance
 
