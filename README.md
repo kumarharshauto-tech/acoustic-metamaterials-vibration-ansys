@@ -197,6 +197,25 @@ The project was simulation-based and used idealised material properties, geometr
 
 Experimental validation was outside the scope of the study. Further work would therefore benefit from physical modal testing, correlation of experimental and numerical frequency responses, and additional optimisation of AMM and DVA parameters.
 
+## Repository Contents
+
+### Simulation Results
+
+The repository includes selected ANSYS-generated outputs from the dissertation, including:
+
+- Modal frequency results
+- Mode shapes
+- Beam and plate total deformation
+- Equivalent von Mises stress
+- Maximum principal strain
+- Directional deformation
+
+### ANSYS Models
+
+The original ANSYS Workbench project files are not included in this repository because the available `.wbpj` files depend on companion project directories and are not currently available as portable project archives.
+
+Portable `.wbpz` archives may be added in a future update if the original Workbench projects can be successfully restored.
+
 ## Automotive Relevance
 
 The project is relevant to lightweight NVH-sensitive structures including:
